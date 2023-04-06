@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Laura Tejada" />
+    <meta name="description" content="Food Delivery Company Website" />
+    <meta name="keywords" content="html,css,web development, seo, services, projects" />
+    <title>Delifast | Food Delivery Company</title>
+    <link 
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shorcut icon" href="./assets/images/logo-icon.png" type="image/S-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="assets/styles/index.css" media="all">
+    <script src="assets/scripts/index.js" defer></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.css" type="text/css">
+</head>
+<body>
+    <header class="scrolled">
+        <div class="container flex">
+            <a href="index.html" class="title flex">
+                <img src="assets/images/logo-icon.png" width="30" alt="logo">
+                <h1>Delifast</h1>
+            </a>
+            <nav class="nav">
+                <div class="navbar">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x not-show"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="index.html#our-services" target="_self">Services</a></li>
+                    <li><a href="index.html#track-order" target="_self">Track your order</a></li>
+                </ul>
+            </nav>
+            <div class="background-opacity-nav-open not-show"></div>
+        </div>
+    </header>
+    <main>
+        <section id="hero-banner">
+            <div class="container">
+                <div class="h-text">
+                    <div class="content">
+                        <div class="animation one" data-animation-offset="first"> 
+                            <h1 class="h-title">Delicious food </h1>
+                            <h1 class="h-title">delivered to your door </h1> 
+                        </div>
+                        <div class="animation two" data-animation-offset="second"> 
+                            <p class="about-text">
+                                We provide the wide range of restaurants you can order from 
+                                your favourite food or explore new restaurants nearby!
+                            </p>
+                        </div>
+                        <div class="animation two" data-animation-offset="third"> 
+                            <a href="index.html#our-services"><button class="h-button">Place an order</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-services" id="our-services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What we offer</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="head-image">
+                            <img src="assets/images/service1.jpg" alt="services">
+                        </div>
+                        <div class="service-text">
+                            <h5>Wide variety of restaurants</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="head-image">
+                            <img src="assets/images/service2.jpg" alt="services">
+                        </div>
+                        <div class="service-text">
+                            <h5>Fast delivery</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="head-image">
+                            <img src="assets/images/service3.jpg" alt="services">
+                        </div>
+                        <div class="service-text">
+                            <h5>Food delivery and more</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us" id="track-order">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Track your order</h2>
+                </div>
+                <div class="section-text">
+                    <p>We want you to have the best experience. To track your order please click in the button above.</p>
+                </div>
+                <div class="animation two center" data-animation-offset="third"> 
+                    <button class="h-button btn-track">Track your order</button>
+                </div>
+                <div class="row">
+                    <div class="col-track">
+                        <div id="map" class="map">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container row">
+            <div class="logo col">
+                <a href="index.html" class="title">
+                    <img src="assets/images/logo-icon.png" width="30" alt="logo">
+                    <h1>Delifast</h1>
+                </a>
+            </div>
+            <div class="social col">
+                <ul>
+                    <li><a href="#" target="_self"><i class="fa-brands fa-instagram"></i></a></a></li>
+                    <li><a href="#" target="_self"><i class="fa-brands fa-square-facebook" id="icon1"></i></a></li>
+                    <li><a href="#" target="_self"><i class="fa-brands fa-square-twitter" id="icon1"></i></a></li>
+                </ul>
+            </div>
+            <div class="copy col">
+                <p>Designed by Laura Tejada &copy; 2023 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
