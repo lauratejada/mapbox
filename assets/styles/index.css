@@ -330,7 +330,7 @@ h1.h-title {
 
 .head-image img {
     border-radius: 25px;
-    box-shadow: var(--app-body-box-shadow);
+    box-shadow: 3px 5px 8px rgba(77 116 118 / 0.9);
 }
 
 .head-image img:hover {
